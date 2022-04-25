@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./CSS/style.css" />
+        <link rel="icon" href="./icons/naruto.png" />
+        <title>Aberturas de Animes</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div id="titulo">
+                    <h1>Melhores Aberturas de Animes</h1>
+                </div>
+            </header>
+            <section>
+                <div class="container">
+                    <div id="containerTitulo">
+                        <h3 id="tituloVideo">
+                            Shingeki no Kyojin - The Rumbling
+                        </h3>
+                    </div>
+
+                    <video
+                        ondblclick="telaCheia()"
+                        onclick="trocarPP()"
+                        onmouseover="aparecer()"
+                        onmouseout="sumir()"
+                        id="videoInicial"
+                        poster="./imagens/eren.jpg"
+                        src="./videos/abertura snk.mp4"
+                    ></video>
+
+                    <div
+                        class="controles"
+                        id="controles"
+                        onmouseover="aparecer()"
+                        onmouseout="sumir()"
+                    >
+                        <img
+                            id="playPause"
+                            class="btn"
+                            onclick="trocarPP()"
+                            src="./icons/play.png"
+                            alt=""
+                        />
+                        <img
+                            id="retroceder"
+                            class="btn"
+                            onclick="retroceder()"
+                            src="./icons/back.png"
+                            alt=""
+                        />
+                        <img
+                            id="avancar"
+                            class="btn"
+                            onclick="avancar()"
+                            src="./icons/frente.png"
+                            alt=""
+                        />
+
+                        <img
+                            id="telaCheia"
+                            class="btn"
+                            onclick="telaCheia()"
+                            src="./icons/fullscreen.png"
+                            alt=""
+                        />
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="0.5"
+                            value="100"
+                            id="regularVolume"
+                            onchange="trocarVolume()"
+                        />
+
+                        <img
+                            class="btn"
+                            id="volumebtn"
+                            src="./icons/volume_alto.png"
+                            alt=""
+                            onclick="mudo()"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="playlist">
+                    <h2>Aberturas</h2>
+                    <div id="video1" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/eren.jpg"
+                                alt=""
+                            />
+                            <p>Shingeki no Kyojin - The Rumbling</p>
+                        </a>
+                    </div>
+                    <div id="video2" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/saga santuário.webp"
+                                alt=""
+                            />
+                            <p>Os Cavaleiros do Zodíaco - Saga do Santuário</p>
+                        </a>
+                    </div>
+                    <div id="video3" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/snk.webp"
+                                alt=""
+                            />
+                            <p>Shingeki no Kyojin - Shinzou Wo Sasageyo</p>
+                        </a>
+                    </div>
+                    <div id="video4" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/DBZ1.jpg"
+                                alt=""
+                            />
+                            <p>Dragon Ball Z - We Gotta Power</p>
+                        </a>
+                    </div>
+                    <div id="video5" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/kimetsu.webp"
+                                alt=""
+                            />
+                            <p>Kimetsu no Yaiba - Gurenge</p>
+                        </a>
+                    </div>
+                    <div id="video6" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/jujutsu.jpg"
+                                alt=""
+                            />
+                            <p>Jujutsu Kaisen - Kaikai Kitan</p>
+                        </a>
+                    </div>
+                    <div id="video7" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/saga hades.jpg"
+                                alt=""
+                            />
+                            <p>Os Cavaleiros do Zodíaco - Saga de Hades</p>
+                        </a>
+                    </div>
+                    <div id="video8" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/DBZ2.webp"
+                                alt=""
+                            />
+                            <p>Dragon Ball Z - CHA-LA HEAD-CHA-LA</p>
+                        </a>
+                    </div>
+                    <div id="video9" class="listaVideos">
+                        <a href="#titulo">
+                            <img
+                                class="imagens"
+                                src="./imagens/boku no hero.png"
+                                alt=""
+                            />
+                            <p>Boku no Hero Academia - Peace Sign</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="final">
+            <a href="https://github.com/Ryan-012">
+                <p>Desenvolvido por Ryan Aragão</p>
+            </a>
+        </footer>
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
